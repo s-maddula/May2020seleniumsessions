@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CRMPRO Test automtion regression suite" thread-count="3" parallel="tests" verbose="3" >
+
+	<test name="CRMPRO Login Test - Chrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.mytest.LoginPageTest" />
+			<class name="com.mytest.HomePageTest" />
+			
+		</classes>
+	</test>
+
+    <test name="CRMPRO Home Test - Firefox">
+    <parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.mytest.LoginPageTest" />
+			<class name="com.mytest.HomePageTest" />
+		</classes>
+	</test>
+
+
+
+</suite>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRMPRO Test automtion regression suite" duration-ms="35352" started-at="2020-07-07T22:45:38Z" finished-at="2020-07-07T22:46:13Z">
+    <groups>
+    </groups>
+    <test name="CRMPRO Login Test" duration-ms="15824" started-at="2020-07-07T22:45:38Z" finished-at="2020-07-07T22:45:54Z">
+      <class name="com.mytest.LoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mytest.LoginPageTest@1bce4f0a]" name="setup" is-config="true" duration-ms="13653" started-at="2020-07-07T22:45:38Z" finished-at="2020-07-07T22:45:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getGoogleTitleTest()[pri:0, instance:com.mytest.LoginPageTest@1bce4f0a]" name="getGoogleTitleTest" duration-ms="174" started-at="2020-07-07T22:45:52Z" finished-at="2020-07-07T22:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGoogleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mytest.LoginPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1894" started-at="2020-07-07T22:45:52Z" finished-at="2020-07-07T22:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mytest.LoginPageTest -->
+    </test> <!-- CRMPRO Login Test -->
+    <test name="CRMPRO Home Test" duration-ms="35352" started-at="2020-07-07T22:45:38Z" finished-at="2020-07-07T22:46:13Z">
+      <class name="com.mytest.HomePageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mytest.HomePageTest@4f7d0008]" name="setup" is-config="true" duration-ms="28387" started-at="2020-07-07T22:45:38Z" finished-at="2020-07-07T22:46:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="crmHomePageTest()[pri:0, instance:com.mytest.HomePageTest@4f7d0008]" name="crmHomePageTest" duration-ms="2545" started-at="2020-07-07T22:46:06Z" finished-at="2020-07-07T22:46:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [CRMPRO] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [CRMPRO] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.mytest.HomePageTest.crmHomePageTest(HomePageTest.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmHomePageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mytest.HomePageTest@4f7d0008]" name="tearDown" is-config="true" duration-ms="4320" started-at="2020-07-07T22:46:09Z" finished-at="2020-07-07T22:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mytest.HomePageTest -->
+    </test> <!-- CRMPRO Home Test -->
+  </suite> <!-- CRMPRO Test automtion regression suite -->
+</testng-results>
